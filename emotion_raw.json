@@ -1,0 +1,482 @@
+[
+    {
+        "time": "16:13:20",
+        "emotion": "sad",
+        "confidence": 99.93879699707031
+    },
+    {
+        "time": "16:13:21",
+        "emotion": "sad",
+        "confidence": 60.3848991394043
+    },
+    {
+        "time": "16:13:21",
+        "emotion": "sad",
+        "confidence": 90.23670959472656
+    },
+    {
+        "time": "16:13:22",
+        "emotion": "happy",
+        "confidence": 94.3458480834961
+    },
+    {
+        "time": "16:13:22",
+        "emotion": "angry",
+        "confidence": 80.892822265625
+    },
+    {
+        "time": "16:13:22",
+        "emotion": "sad",
+        "confidence": 64.01688385009766
+    },
+    {
+        "time": "16:13:23",
+        "emotion": "sad",
+        "confidence": 72.25434875488281
+    },
+    {
+        "time": "16:13:23",
+        "emotion": "sad",
+        "confidence": 67.66145324707031
+    },
+    {
+        "time": "16:13:23",
+        "emotion": "neutral",
+        "confidence": 69.42137908935547
+    },
+    {
+        "time": "16:13:24",
+        "emotion": "neutral",
+        "confidence": 99.9988784790039
+    },
+    {
+        "time": "16:13:24",
+        "emotion": "fear",
+        "confidence": 99.82298278808594
+    },
+    {
+        "time": "16:13:25",
+        "emotion": "fear",
+        "confidence": 98.99772644042969
+    },
+    {
+        "time": "16:13:25",
+        "emotion": "sad",
+        "confidence": 99.889404296875
+    },
+    {
+        "time": "16:13:25",
+        "emotion": "happy",
+        "confidence": 99.99993133544922
+    },
+    {
+        "time": "16:13:26",
+        "emotion": "fear",
+        "confidence": 99.57835388183594
+    },
+    {
+        "time": "16:13:26",
+        "emotion": "happy",
+        "confidence": 61.738121032714844
+    },
+    {
+        "time": "16:13:27",
+        "emotion": "angry",
+        "confidence": 68.13323211669922
+    },
+    {
+        "time": "16:13:27",
+        "emotion": "angry",
+        "confidence": 80.39767456054688
+    },
+    {
+        "time": "16:13:27",
+        "emotion": "fear",
+        "confidence": 99.80427551269531
+    },
+    {
+        "time": "16:13:28",
+        "emotion": "sad",
+        "confidence": 97.4162368774414
+    },
+    {
+        "time": "16:13:28",
+        "emotion": "sad",
+        "confidence": 95.26126098632812
+    },
+    {
+        "time": "16:13:29",
+        "emotion": "angry",
+        "confidence": 96.14181518554688
+    },
+    {
+        "time": "16:13:29",
+        "emotion": "angry",
+        "confidence": 50.15502166748047
+    },
+    {
+        "time": "16:13:29",
+        "emotion": "happy",
+        "confidence": 96.39042663574219
+    },
+    {
+        "time": "16:13:30",
+        "emotion": "happy",
+        "confidence": 94.47183990478516
+    },
+    {
+        "time": "16:13:30",
+        "emotion": "sad",
+        "confidence": 76.04800415039062
+    },
+    {
+        "time": "16:13:30",
+        "emotion": "happy",
+        "confidence": 48.03840637207031
+    },
+    {
+        "time": "16:13:31",
+        "emotion": "neutral",
+        "confidence": 96.12699890136719
+    },
+    {
+        "time": "16:13:31",
+        "emotion": "neutral",
+        "confidence": 99.42764282226562
+    },
+    {
+        "time": "16:13:32",
+        "emotion": "neutral",
+        "confidence": 98.6091537475586
+    },
+    {
+        "time": "16:13:32",
+        "emotion": "neutral",
+        "confidence": 98.54132080078125
+    },
+    {
+        "time": "16:13:32",
+        "emotion": "neutral",
+        "confidence": 84.9171371459961
+    },
+    {
+        "time": "16:13:33",
+        "emotion": "neutral",
+        "confidence": 99.44916534423828
+    },
+    {
+        "time": "16:13:33",
+        "emotion": "happy",
+        "confidence": 98.33592224121094
+    },
+    {
+        "time": "16:13:34",
+        "emotion": "happy",
+        "confidence": 99.98021697998047
+    },
+    {
+        "time": "16:13:34",
+        "emotion": "happy",
+        "confidence": 86.45320892333984
+    },
+    {
+        "time": "16:13:34",
+        "emotion": "happy",
+        "confidence": 68.83306884765625
+    },
+    {
+        "time": "16:13:35",
+        "emotion": "fear",
+        "confidence": 79.77070617675781
+    },
+    {
+        "time": "16:13:35",
+        "emotion": "neutral",
+        "confidence": 61.893165588378906
+    },
+    {
+        "time": "16:13:36",
+        "emotion": "neutral",
+        "confidence": 56.369571685791016
+    },
+    {
+        "time": "16:13:36",
+        "emotion": "neutral",
+        "confidence": 93.74044036865234
+    },
+    {
+        "time": "16:13:37",
+        "emotion": "neutral",
+        "confidence": 99.99906158447266
+    },
+    {
+        "time": "16:13:37",
+        "emotion": "sad",
+        "confidence": 51.27823257446289
+    },
+    {
+        "time": "16:13:37",
+        "emotion": "sad",
+        "confidence": 56.69631576538086
+    },
+    {
+        "time": "16:13:38",
+        "emotion": "neutral",
+        "confidence": 99.9943618774414
+    },
+    {
+        "time": "16:13:38",
+        "emotion": "neutral",
+        "confidence": 83.57530212402344
+    },
+    {
+        "time": "16:13:38",
+        "emotion": "neutral",
+        "confidence": 90.7815170288086
+    },
+    {
+        "time": "16:13:39",
+        "emotion": "neutral",
+        "confidence": 98.9672622680664
+    },
+    {
+        "time": "16:13:39",
+        "emotion": "neutral",
+        "confidence": 98.79334259033203
+    },
+    {
+        "time": "16:13:40",
+        "emotion": "neutral",
+        "confidence": 99.83161926269531
+    },
+    {
+        "time": "16:13:40",
+        "emotion": "neutral",
+        "confidence": 99.92813110351562
+    },
+    {
+        "time": "16:13:41",
+        "emotion": "sad",
+        "confidence": 66.45672607421875
+    },
+    {
+        "time": "16:13:41",
+        "emotion": "sad",
+        "confidence": 72.25868225097656
+    },
+    {
+        "time": "16:13:41",
+        "emotion": "sad",
+        "confidence": 89.0643539428711
+    },
+    {
+        "time": "16:13:42",
+        "emotion": "sad",
+        "confidence": 84.56107330322266
+    },
+    {
+        "time": "16:13:42",
+        "emotion": "neutral",
+        "confidence": 99.98603820800781
+    },
+    {
+        "time": "16:13:42",
+        "emotion": "fear",
+        "confidence": 53.53034210205078
+    },
+    {
+        "time": "16:13:43",
+        "emotion": "sad",
+        "confidence": 56.28363037109375
+    },
+    {
+        "time": "16:13:43",
+        "emotion": "sad",
+        "confidence": 59.21208190917969
+    },
+    {
+        "time": "16:13:44",
+        "emotion": "sad",
+        "confidence": 74.1396484375
+    },
+    {
+        "time": "16:13:44",
+        "emotion": "sad",
+        "confidence": 74.07146453857422
+    },
+    {
+        "time": "16:13:45",
+        "emotion": "neutral",
+        "confidence": 99.92996215820312
+    },
+    {
+        "time": "16:13:45",
+        "emotion": "sad",
+        "confidence": 99.18707275390625
+    },
+    {
+        "time": "16:13:45",
+        "emotion": "sad",
+        "confidence": 97.35172271728516
+    },
+    {
+        "time": "16:13:46",
+        "emotion": "sad",
+        "confidence": 89.1673812866211
+    },
+    {
+        "time": "16:13:46",
+        "emotion": "fear",
+        "confidence": 80.66911315917969
+    },
+    {
+        "time": "16:13:46",
+        "emotion": "sad",
+        "confidence": 97.96549224853516
+    },
+    {
+        "time": "16:13:47",
+        "emotion": "neutral",
+        "confidence": 99.84185028076172
+    },
+    {
+        "time": "16:13:47",
+        "emotion": "sad",
+        "confidence": 68.7240982055664
+    },
+    {
+        "time": "16:13:48",
+        "emotion": "happy",
+        "confidence": 78.36796569824219
+    },
+    {
+        "time": "16:13:48",
+        "emotion": "neutral",
+        "confidence": 99.93196868896484
+    },
+    {
+        "time": "16:13:49",
+        "emotion": "neutral",
+        "confidence": 99.93460083007812
+    },
+    {
+        "time": "16:13:49",
+        "emotion": "neutral",
+        "confidence": 99.45431518554688
+    },
+    {
+        "time": "16:13:49",
+        "emotion": "neutral",
+        "confidence": 67.79985046386719
+    },
+    {
+        "time": "16:13:50",
+        "emotion": "neutral",
+        "confidence": 90.5544662475586
+    },
+    {
+        "time": "16:13:50",
+        "emotion": "neutral",
+        "confidence": 94.65485382080078
+    },
+    {
+        "time": "16:13:51",
+        "emotion": "disgust",
+        "confidence": 61.162200927734375
+    },
+    {
+        "time": "16:13:51",
+        "emotion": "fear",
+        "confidence": 58.83888626098633
+    },
+    {
+        "time": "16:13:51",
+        "emotion": "neutral",
+        "confidence": 27.9396915435791
+    },
+    {
+        "time": "16:13:52",
+        "emotion": "sad",
+        "confidence": 56.7988166809082
+    },
+    {
+        "time": "16:13:52",
+        "emotion": "neutral",
+        "confidence": 76.92875671386719
+    },
+    {
+        "time": "16:13:53",
+        "emotion": "neutral",
+        "confidence": 87.39623260498047
+    },
+    {
+        "time": "16:13:53",
+        "emotion": "sad",
+        "confidence": 92.3868408203125
+    },
+    {
+        "time": "16:13:53",
+        "emotion": "neutral",
+        "confidence": 96.53845977783203
+    },
+    {
+        "time": "16:13:54",
+        "emotion": "sad",
+        "confidence": 87.84766387939453
+    },
+    {
+        "time": "16:13:54",
+        "emotion": "neutral",
+        "confidence": 50.01048278808594
+    },
+    {
+        "time": "16:13:55",
+        "emotion": "sad",
+        "confidence": 48.70425796508789
+    },
+    {
+        "time": "16:13:55",
+        "emotion": "fear",
+        "confidence": 52.16466522216797
+    },
+    {
+        "time": "16:13:55",
+        "emotion": "fear",
+        "confidence": 80.78298950195312
+    },
+    {
+        "time": "16:13:56",
+        "emotion": "fear",
+        "confidence": 99.5501937866211
+    },
+    {
+        "time": "16:13:56",
+        "emotion": "happy",
+        "confidence": 52.52479553222656
+    },
+    {
+        "time": "16:13:57",
+        "emotion": "neutral",
+        "confidence": 98.85803985595703
+    },
+    {
+        "time": "16:13:57",
+        "emotion": "neutral",
+        "confidence": 86.67789459228516
+    },
+    {
+        "time": "16:13:57",
+        "emotion": "happy",
+        "confidence": 95.44236755371094
+    },
+    {
+        "time": "16:13:58",
+        "emotion": "sad",
+        "confidence": 44.09574890136719
+    },
+    {
+        "time": "16:13:58",
+        "emotion": "angry",
+        "confidence": 57.94420623779297
+    }
+]
