@@ -1,0 +1,695 @@
+[
+    {
+        "time": "00:17:36",
+        "fer_dom": "angry",
+        "fer_conf": 0.0,
+        "ser_dom": "neutral",
+        "ser_conf": 54.95,
+        "final_dom": "neutral",
+        "final_conf": 13.74
+    },
+    {
+        "time": "00:17:37",
+        "fer_dom": "neutral",
+        "fer_conf": 13.74,
+        "ser_dom": "neutral",
+        "ser_conf": 55.29,
+        "final_dom": "neutral",
+        "final_conf": 24.11
+    },
+    {
+        "time": "00:17:38",
+        "fer_dom": "neutral",
+        "fer_conf": 24.11,
+        "ser_dom": "neutral",
+        "ser_conf": 56.18,
+        "final_dom": "neutral",
+        "final_conf": 32.07
+    },
+    {
+        "time": "00:17:39",
+        "fer_dom": "neutral",
+        "fer_conf": 32.07,
+        "ser_dom": "neutral",
+        "ser_conf": 55.45,
+        "final_dom": "neutral",
+        "final_conf": 37.91
+    },
+    {
+        "time": "00:17:40",
+        "fer_dom": "neutral",
+        "fer_conf": 37.91,
+        "ser_dom": "neutral",
+        "ser_conf": 56.07,
+        "final_dom": "neutral",
+        "final_conf": 42.41
+    },
+    {
+        "time": "00:17:41",
+        "fer_dom": "neutral",
+        "fer_conf": 42.41,
+        "ser_dom": "neutral",
+        "ser_conf": 53.65,
+        "final_dom": "neutral",
+        "final_conf": 45.38
+    },
+    {
+        "time": "00:17:42",
+        "fer_dom": "neutral",
+        "fer_conf": 45.38,
+        "ser_dom": "neutral",
+        "ser_conf": 56.27,
+        "final_dom": "neutral",
+        "final_conf": 48.01
+    },
+    {
+        "time": "00:17:43",
+        "fer_dom": "neutral",
+        "fer_conf": 48.01,
+        "ser_dom": "neutral",
+        "ser_conf": 56.61,
+        "final_dom": "neutral",
+        "final_conf": 50.05
+    },
+    {
+        "time": "00:17:44",
+        "fer_dom": "neutral",
+        "fer_conf": 50.05,
+        "ser_dom": "neutral",
+        "ser_conf": 40.0,
+        "final_dom": "neutral",
+        "final_conf": 49.0
+    },
+    {
+        "time": "00:17:45",
+        "fer_dom": "sad",
+        "fer_conf": 96.48,
+        "ser_dom": "neutral",
+        "ser_conf": 52.81,
+        "final_dom": "neutral",
+        "final_conf": 44.67
+    },
+    {
+        "time": "00:17:46",
+        "fer_dom": "neutral",
+        "fer_conf": 44.67,
+        "ser_dom": "neutral",
+        "ser_conf": 56.57,
+        "final_dom": "neutral",
+        "final_conf": 46.76
+    },
+    {
+        "time": "00:17:47",
+        "fer_dom": "neutral",
+        "fer_conf": 46.76,
+        "ser_dom": "neutral",
+        "ser_conf": 56.89,
+        "final_dom": "neutral",
+        "final_conf": 48.5
+    },
+    {
+        "time": "00:17:48",
+        "fer_dom": "neutral",
+        "fer_conf": 48.5,
+        "ser_dom": "neutral",
+        "ser_conf": 56.87,
+        "final_dom": "neutral",
+        "final_conf": 49.93
+    },
+    {
+        "time": "00:17:49",
+        "fer_dom": "neutral",
+        "fer_conf": 49.93,
+        "ser_dom": "happy",
+        "ser_conf": 51.04,
+        "final_dom": "neutral",
+        "final_conf": 43.84
+    },
+    {
+        "time": "00:17:50",
+        "fer_dom": "neutral",
+        "fer_conf": 43.84,
+        "ser_dom": "happy",
+        "ser_conf": 49.81,
+        "final_dom": "neutral",
+        "final_conf": 38.84
+    },
+    {
+        "time": "00:17:51",
+        "fer_dom": "neutral",
+        "fer_conf": 38.84,
+        "ser_dom": "happy",
+        "ser_conf": 34.61,
+        "final_dom": "neutral",
+        "final_conf": 36.86
+    },
+    {
+        "time": "00:17:52",
+        "fer_dom": "neutral",
+        "fer_conf": 36.86,
+        "ser_dom": "neutral",
+        "ser_conf": 55.61,
+        "final_dom": "neutral",
+        "final_conf": 39.72
+    },
+    {
+        "time": "00:17:53",
+        "fer_dom": "neutral",
+        "fer_conf": 39.72,
+        "ser_dom": "neutral",
+        "ser_conf": 57.34,
+        "final_dom": "neutral",
+        "final_conf": 42.4
+    },
+    {
+        "time": "00:17:54",
+        "fer_dom": "neutral",
+        "fer_conf": 42.4,
+        "ser_dom": "neutral",
+        "ser_conf": 57.19,
+        "final_dom": "neutral",
+        "final_conf": 44.65
+    },
+    {
+        "time": "00:17:55",
+        "fer_dom": "sad",
+        "fer_conf": 100.0,
+        "ser_dom": "neutral",
+        "ser_conf": 57.24,
+        "final_dom": "neutral",
+        "final_conf": 42.07
+    },
+    {
+        "time": "00:17:56",
+        "fer_dom": "neutral",
+        "fer_conf": 42.07,
+        "ser_dom": "happy",
+        "ser_conf": 41.97,
+        "final_dom": "neutral",
+        "final_conf": 38.48
+    },
+    {
+        "time": "00:17:57",
+        "fer_dom": "neutral",
+        "fer_conf": 38.48,
+        "ser_dom": "neutral",
+        "ser_conf": 44.36,
+        "final_dom": "neutral",
+        "final_conf": 39.37
+    },
+    {
+        "time": "00:17:58",
+        "fer_dom": "neutral",
+        "fer_conf": 39.37,
+        "ser_dom": "neutral",
+        "ser_conf": 56.82,
+        "final_dom": "neutral",
+        "final_conf": 42.0
+    },
+    {
+        "time": "00:17:59",
+        "fer_dom": "neutral",
+        "fer_conf": 42.0,
+        "ser_dom": "neutral",
+        "ser_conf": 56.69,
+        "final_dom": "neutral",
+        "final_conf": 44.21
+    },
+    {
+        "time": "00:18:00",
+        "fer_dom": "neutral",
+        "fer_conf": 44.21,
+        "ser_dom": "neutral",
+        "ser_conf": 51.12,
+        "final_dom": "neutral",
+        "final_conf": 45.25
+    },
+    {
+        "time": "00:18:01",
+        "fer_dom": "neutral",
+        "fer_conf": 45.25,
+        "ser_dom": "happy",
+        "ser_conf": 34.12,
+        "final_dom": "neutral",
+        "final_conf": 42.35
+    },
+    {
+        "time": "00:18:02",
+        "fer_dom": "neutral",
+        "fer_conf": 42.35,
+        "ser_dom": "neutral",
+        "ser_conf": 46.2,
+        "final_dom": "neutral",
+        "final_conf": 42.93
+    },
+    {
+        "time": "00:18:03",
+        "fer_dom": "neutral",
+        "fer_conf": 42.93,
+        "ser_dom": "neutral",
+        "ser_conf": 38.34,
+        "final_dom": "neutral",
+        "final_conf": 42.24
+    },
+    {
+        "time": "00:18:04",
+        "fer_dom": "neutral",
+        "fer_conf": 42.24,
+        "ser_dom": "neutral",
+        "ser_conf": 55.64,
+        "final_dom": "neutral",
+        "final_conf": 44.25
+    },
+    {
+        "time": "00:18:05",
+        "fer_dom": "sad",
+        "fer_conf": 60.61,
+        "ser_dom": "neutral",
+        "ser_conf": 55.39,
+        "final_dom": "neutral",
+        "final_conf": 41.53
+    },
+    {
+        "time": "00:18:06",
+        "fer_dom": "neutral",
+        "fer_conf": 41.53,
+        "ser_dom": "neutral",
+        "ser_conf": 44.28,
+        "final_dom": "neutral",
+        "final_conf": 41.94
+    },
+    {
+        "time": "00:18:07",
+        "fer_dom": "neutral",
+        "fer_conf": 41.94,
+        "ser_dom": "neutral",
+        "ser_conf": 54.35,
+        "final_dom": "neutral",
+        "final_conf": 43.81
+    },
+    {
+        "time": "00:18:08",
+        "fer_dom": "neutral",
+        "fer_conf": 43.81,
+        "ser_dom": "neutral",
+        "ser_conf": 41.62,
+        "final_dom": "neutral",
+        "final_conf": 43.48
+    },
+    {
+        "time": "00:18:09",
+        "fer_dom": "neutral",
+        "fer_conf": 43.48,
+        "ser_dom": "neutral",
+        "ser_conf": 48.2,
+        "final_dom": "neutral",
+        "final_conf": 44.19
+    },
+    {
+        "time": "00:18:10",
+        "fer_dom": "neutral",
+        "fer_conf": 44.19,
+        "ser_dom": "neutral",
+        "ser_conf": 52.9,
+        "final_dom": "neutral",
+        "final_conf": 45.49
+    },
+    {
+        "time": "00:18:11",
+        "fer_dom": "neutral",
+        "fer_conf": 45.49,
+        "ser_dom": "neutral",
+        "ser_conf": 48.96,
+        "final_dom": "neutral",
+        "final_conf": 46.01
+    },
+    {
+        "time": "00:18:12",
+        "fer_dom": "neutral",
+        "fer_conf": 46.01,
+        "ser_dom": "neutral",
+        "ser_conf": 39.65,
+        "final_dom": "neutral",
+        "final_conf": 45.06
+    },
+    {
+        "time": "00:18:13",
+        "fer_dom": "neutral",
+        "fer_conf": 45.06,
+        "ser_dom": "neutral",
+        "ser_conf": 50.66,
+        "final_dom": "neutral",
+        "final_conf": 45.9
+    },
+    {
+        "time": "00:18:14",
+        "fer_dom": "neutral",
+        "fer_conf": 45.9,
+        "ser_dom": "neutral",
+        "ser_conf": 53.42,
+        "final_dom": "neutral",
+        "final_conf": 47.03
+    },
+    {
+        "time": "00:18:15",
+        "fer_dom": "sad",
+        "fer_conf": 95.75,
+        "ser_dom": "neutral",
+        "ser_conf": 53.2,
+        "final_dom": "neutral",
+        "final_conf": 43.25
+    },
+    {
+        "time": "00:18:16",
+        "fer_dom": "neutral",
+        "fer_conf": 43.25,
+        "ser_dom": "neutral",
+        "ser_conf": 52.23,
+        "final_dom": "neutral",
+        "final_conf": 44.6
+    },
+    {
+        "time": "00:18:17",
+        "fer_dom": "neutral",
+        "fer_conf": 44.6,
+        "ser_dom": "neutral",
+        "ser_conf": 48.74,
+        "final_dom": "neutral",
+        "final_conf": 45.22
+    },
+    {
+        "time": "00:18:18",
+        "fer_dom": "neutral",
+        "fer_conf": 45.22,
+        "ser_dom": "neutral",
+        "ser_conf": 34.44,
+        "final_dom": "neutral",
+        "final_conf": 43.6
+    },
+    {
+        "time": "00:18:19",
+        "fer_dom": "neutral",
+        "fer_conf": 43.6,
+        "ser_dom": "neutral",
+        "ser_conf": 35.54,
+        "final_dom": "neutral",
+        "final_conf": 42.39
+    },
+    {
+        "time": "00:18:20",
+        "fer_dom": "neutral",
+        "fer_conf": 42.39,
+        "ser_dom": "neutral",
+        "ser_conf": 44.33,
+        "final_dom": "neutral",
+        "final_conf": 42.68
+    },
+    {
+        "time": "00:18:21",
+        "fer_dom": "neutral",
+        "fer_conf": 42.68,
+        "ser_dom": "neutral",
+        "ser_conf": 36.58,
+        "final_dom": "neutral",
+        "final_conf": 41.77
+    },
+    {
+        "time": "00:18:22",
+        "fer_dom": "neutral",
+        "fer_conf": 41.77,
+        "ser_dom": "neutral",
+        "ser_conf": 50.61,
+        "final_dom": "neutral",
+        "final_conf": 43.09
+    },
+    {
+        "time": "00:18:23",
+        "fer_dom": "neutral",
+        "fer_conf": 43.09,
+        "ser_dom": "neutral",
+        "ser_conf": 46.35,
+        "final_dom": "neutral",
+        "final_conf": 43.58
+    },
+    {
+        "time": "00:18:24",
+        "fer_dom": "neutral",
+        "fer_conf": 43.58,
+        "ser_dom": "neutral",
+        "ser_conf": 47.77,
+        "final_dom": "neutral",
+        "final_conf": 44.21
+    },
+    {
+        "time": "00:18:25",
+        "fer_dom": "sad",
+        "fer_conf": 92.57,
+        "ser_dom": "neutral",
+        "ser_conf": 50.2,
+        "final_dom": "neutral",
+        "final_conf": 40.85
+    },
+    {
+        "time": "00:18:26",
+        "fer_dom": "neutral",
+        "fer_conf": 40.85,
+        "ser_dom": "neutral",
+        "ser_conf": 50.81,
+        "final_dom": "neutral",
+        "final_conf": 42.34
+    },
+    {
+        "time": "00:18:27",
+        "fer_dom": "neutral",
+        "fer_conf": 42.34,
+        "ser_dom": "neutral",
+        "ser_conf": 53.31,
+        "final_dom": "neutral",
+        "final_conf": 43.99
+    },
+    {
+        "time": "00:18:28",
+        "fer_dom": "neutral",
+        "fer_conf": 43.99,
+        "ser_dom": "neutral",
+        "ser_conf": 43.21,
+        "final_dom": "neutral",
+        "final_conf": 43.87
+    },
+    {
+        "time": "00:18:29",
+        "fer_dom": "neutral",
+        "fer_conf": 43.87,
+        "ser_dom": "happy",
+        "ser_conf": 38.05,
+        "final_dom": "neutral",
+        "final_conf": 40.58
+    },
+    {
+        "time": "00:18:30",
+        "fer_dom": "neutral",
+        "fer_conf": 40.58,
+        "ser_dom": "neutral",
+        "ser_conf": 45.25,
+        "final_dom": "neutral",
+        "final_conf": 41.28
+    },
+    {
+        "time": "00:18:31",
+        "fer_dom": "neutral",
+        "fer_conf": 41.28,
+        "ser_dom": "neutral",
+        "ser_conf": 47.85,
+        "final_dom": "neutral",
+        "final_conf": 42.27
+    },
+    {
+        "time": "00:18:32",
+        "fer_dom": "neutral",
+        "fer_conf": 42.27,
+        "ser_dom": "neutral",
+        "ser_conf": 45.95,
+        "final_dom": "neutral",
+        "final_conf": 42.82
+    },
+    {
+        "time": "00:18:33",
+        "fer_dom": "neutral",
+        "fer_conf": 42.82,
+        "ser_dom": "neutral",
+        "ser_conf": 55.03,
+        "final_dom": "neutral",
+        "final_conf": 44.65
+    },
+    {
+        "time": "00:18:34",
+        "fer_dom": "neutral",
+        "fer_conf": 44.65,
+        "ser_dom": "neutral",
+        "ser_conf": 56.35,
+        "final_dom": "neutral",
+        "final_conf": 46.41
+    },
+    {
+        "time": "00:18:35",
+        "fer_dom": "sad",
+        "fer_conf": 93.94,
+        "ser_dom": "neutral",
+        "ser_conf": 55.76,
+        "final_dom": "neutral",
+        "final_conf": 43.37
+    },
+    {
+        "time": "00:18:36",
+        "fer_dom": "neutral",
+        "fer_conf": 43.37,
+        "ser_dom": "neutral",
+        "ser_conf": 56.75,
+        "final_dom": "neutral",
+        "final_conf": 45.37
+    },
+    {
+        "time": "00:18:37",
+        "fer_dom": "neutral",
+        "fer_conf": 45.37,
+        "ser_dom": "neutral",
+        "ser_conf": 46.06,
+        "final_dom": "neutral",
+        "final_conf": 45.48
+    },
+    {
+        "time": "00:18:38",
+        "fer_dom": "neutral",
+        "fer_conf": 45.48,
+        "ser_dom": "neutral",
+        "ser_conf": 54.06,
+        "final_dom": "neutral",
+        "final_conf": 46.77
+    },
+    {
+        "time": "00:18:39",
+        "fer_dom": "neutral",
+        "fer_conf": 46.77,
+        "ser_dom": "neutral",
+        "ser_conf": 52.56,
+        "final_dom": "neutral",
+        "final_conf": 47.63
+    },
+    {
+        "time": "00:18:40",
+        "fer_dom": "neutral",
+        "fer_conf": 47.63,
+        "ser_dom": "neutral",
+        "ser_conf": 56.76,
+        "final_dom": "neutral",
+        "final_conf": 49.0
+    },
+    {
+        "time": "00:18:41",
+        "fer_dom": "neutral",
+        "fer_conf": 49.0,
+        "ser_dom": "neutral",
+        "ser_conf": 56.21,
+        "final_dom": "neutral",
+        "final_conf": 50.08
+    },
+    {
+        "time": "00:18:42",
+        "fer_dom": "neutral",
+        "fer_conf": 50.08,
+        "ser_dom": "neutral",
+        "ser_conf": 52.66,
+        "final_dom": "neutral",
+        "final_conf": 50.47
+    },
+    {
+        "time": "00:18:43",
+        "fer_dom": "neutral",
+        "fer_conf": 50.47,
+        "ser_dom": "neutral",
+        "ser_conf": 56.05,
+        "final_dom": "neutral",
+        "final_conf": 51.31
+    },
+    {
+        "time": "00:18:44",
+        "fer_dom": "neutral",
+        "fer_conf": 51.31,
+        "ser_dom": "neutral",
+        "ser_conf": 56.27,
+        "final_dom": "neutral",
+        "final_conf": 52.05
+    },
+    {
+        "time": "00:18:45",
+        "fer_dom": "sad",
+        "fer_conf": 99.94,
+        "ser_dom": "neutral",
+        "ser_conf": 55.75,
+        "final_dom": "neutral",
+        "final_conf": 47.4
+    },
+    {
+        "time": "00:18:46",
+        "fer_dom": "neutral",
+        "fer_conf": 47.4,
+        "ser_dom": "neutral",
+        "ser_conf": 56.07,
+        "final_dom": "neutral",
+        "final_conf": 48.7
+    },
+    {
+        "time": "00:18:47",
+        "fer_dom": "neutral",
+        "fer_conf": 48.7,
+        "ser_dom": "neutral",
+        "ser_conf": 57.11,
+        "final_dom": "neutral",
+        "final_conf": 49.96
+    },
+    {
+        "time": "00:18:48",
+        "fer_dom": "neutral",
+        "fer_conf": 49.96,
+        "ser_dom": "neutral",
+        "ser_conf": 55.43,
+        "final_dom": "neutral",
+        "final_conf": 50.78
+    },
+    {
+        "time": "00:18:49",
+        "fer_dom": "neutral",
+        "fer_conf": 50.78,
+        "ser_dom": "neutral",
+        "ser_conf": 54.65,
+        "final_dom": "neutral",
+        "final_conf": 51.36
+    },
+    {
+        "time": "00:18:49",
+        "fer_dom": "neutral",
+        "fer_conf": 51.36,
+        "ser_dom": "neutral",
+        "ser_conf": 41.4,
+        "final_dom": "neutral",
+        "final_conf": 49.87
+    },
+    {
+        "time": "00:18:50",
+        "fer_dom": "neutral",
+        "fer_conf": 49.87,
+        "ser_dom": "neutral",
+        "ser_conf": 57.35,
+        "final_dom": "neutral",
+        "final_conf": 50.99
+    },
+    {
+        "time": "00:18:51",
+        "fer_dom": "neutral",
+        "fer_conf": 50.99,
+        "ser_dom": "neutral",
+        "ser_conf": 56.05,
+        "final_dom": "neutral",
+        "final_conf": 51.75
+    }
+]
