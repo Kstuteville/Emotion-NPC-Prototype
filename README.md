@@ -67,19 +67,19 @@ These insights shaped core design decisions: **emotion throttling**, **trust-gat
 - Tone Analysis — *Coming soon* (Speech Emotion Recognition)  
 - Confidence Smoothing — Prevents jittery emotion detection  
 
-### 🧠 Adaptive AI Personality
+### Adaptive AI Personality
 - LLM-Driven Responses — GPT-4o-mini generates contextual dialogue  
 - Emotional Memory — remembers past interactions and player mood  
 - Dynamic Trust System — relationship evolves based on player behavior  
 - Mood States — Commander Zad has guilt, suspicion, sympathy, and trauma states  
 
-### 🎮 Unreal Engine Integration
+### Unreal Engine Integration
 - OSC Communication — real-time Python ↔ Unreal data streaming  
 - Text-to-Speech — in-engine voice synthesis for NPC responses  
 - Talking Animations — lip-sync and gesture system  
 - UI Feedback — live emotion display and dialogue rendering  
 
-### 📖 Emergent Narrative Systems
+### Emergent Narrative Systems
 - Trust-Gated Lore — story reveals unlock through relationship progression  
 - Emotion-Driven Quests — three adaptive storylines (Repair, Anomaly, Confession)  
 - Contextual Objectives — NPC suggests tasks based on emotional state and conversation  
