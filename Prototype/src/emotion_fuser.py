@@ -10,35 +10,11 @@ from deepface import DeepFace
 from pythonosc import udp_client
 import os
 import random
-import csv
-from datetime import datetime
-
-# --------------------------------------
-# PLAYTEST LOGGING SETUP
-# --------------------------------------
-LOG_FILE = "npc_playtest_log.csv"
-
-# Create file with header if not exists
-if not os.path.exists(LOG_FILE):
-    with open(LOG_FILE, "w", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow([
-            "timestamp",
-            "player_transcript",
-            "npc_reply",
-            "emotion",
-            "emotion_confidence",
-            "behavior_mode",
-            "trust_level",
-            "lore_unlocked"
-        ])
-
-
 
 llm_client = OpenAI(api_key=os.getenv("NPC_AI_KEY"))
 
 # CONFIGvvvvvv
-UE_IP = "192.168.1.159"
+UE_IP = "192.168.7.242"
 UE_PORT = 9000
 client = udp_client.SimpleUDPClient(UE_IP, UE_PORT)
 
@@ -85,23 +61,7 @@ def generate_npc_reply(transcript, emotion_packet):
     global conversation_history, npc_state
 
     emotion = emotion_packet.get("label", "neutral")
-    should_comment_flag = emotion_packet.get("should_comment", False)  # >>> renamed
-    lowered = transcript.lower()
-
-    # >>> detect direct emotion/face questions for override
-    direct_emotion_triggers = [
-        "my emotion", "my emotions", "how do i look", "how do i seem",
-        "what do i look like", "do you see my", "what expression",
-        "what's my expression", "what is my expression",
-        "recognize my emotions", "recognize my emotion",
-        "what face am i making", "am i sad", "am i happy",
-        "am i smiling", "am i upset", "read my face",
-        "do i look happy", "do i look sad", "how do i appear"
-    ]
-    force_emotion_comment = any(p in lowered for p in direct_emotion_triggers)
-
-    # >>> final flag the model will see
-    effective_should_comment = should_comment_flag or force_emotion_comment
+    should_comment = emotion_packet.get("should_comment", False)
 
     # Update trust + stats
     if emotion == "happy":
@@ -127,19 +87,19 @@ def generate_npc_reply(transcript, emotion_packet):
 
     # Player asks for directions → quest
     def next_questline():
-        lowered_inner = transcript.lower()
-        return any(p in lowered_inner for p in ["what should i do", "help", "mission", "quest", "task", "what now"])
+        lowered = transcript.lower()
+        return any(p in lowered for p in ["what should i do", "help", "mission", "quest", "task", "what now"])
 
     offer_quest = next_questline()
 
-    #  emotion instructions
+    # 20% chance ONLY
     emotion_instruction = (
         "React to the player's facial expression in your first sentence."
-        if effective_should_comment else
+        if should_comment else
         "Do NOT mention their facial expression this turn."
     )
 
-    # Dialogue variety roll (Python decides mode)
+    # Dialogue variety
     roll = random.random()
     if roll < 0.4:
         behavior_mode = "question"
@@ -147,21 +107,6 @@ def generate_npc_reply(transcript, emotion_packet):
         behavior_mode = "lore"
     else:
         behavior_mode = "comment"
-
-    # >>> DEBUG PRINTS (B3 style)
-    print("\n========== NPC DEBUG ==========")
-    print(f"Transcript: {transcript}")
-    print(f"Emotion: {emotion}")
-    print(f"should_comment_flag: {should_comment_flag}")
-    print(f"force_emotion_comment: {force_emotion_comment}")
-    print(f"Effective should_comment: {effective_should_comment}")
-    print(f"Behavior mode (rolled): {behavior_mode}")
-    print(f"Trust level: {npc_state['trust_level']:.2f}")
-    print(f"Happy interactions: {npc_state['happy_interactions']}")
-    print(f"Sad interactions: {npc_state['sad_interactions']}")
-    print(f"Neutral interactions: {npc_state['neutral_interactions']}")
-    print(f"Lore unlocked: {npc_state['lore_unlocked']}")
-    print("================================\n")
 
     # SYSTEM PROMPT
     system_prompt = f"""
@@ -178,7 +123,7 @@ If the player directly asks about their expression, face, mood, or how they look
 you MUST comment on their emotion even if the emotion-comment trigger is off.
 Examples: “what’s my expression?”, “do I look happy?”, “how do I look?”, 
 “what face am I making?”, “am I sad?”
-- Detected emotion: {emotion}
+- Emotion: {emotion}
 - {emotion_instruction}
 
 Emotion rules:
@@ -187,24 +132,10 @@ Emotion rules:
 - neutral → blunt remark about unreadable expression.
 
 DIALOGUE RULES:
-You will see a tag like behavior_mode=question|lore|comment in the user message.
-
-- If behavior_mode="question":
-    - It is a good time to ask EXACTLY ONE question.
-    - Let your reply end with a question mark, and keep it short and in-character.
-- If behavior_mode="lore":
-    - Focus on revealing a small piece of lore, ship details, personal history, or the anomaly.
-    - Normally do NOT end with a question; end with a firm statement.
-- If behavior_mode="comment":
-    - Focus on observations or reactions about the ship, the situation, or the player's actions.
-    - Normally do NOT end with a question; end with a statement or dry remark.
-
-Across the whole conversation, this should roughly feel like:
-- ~40% of your turns ending in a question (question mode),
-- ~30% lore-focused statements,
-- ~30% observational or reactive comments.
-
-These are soft guidelines meant to make dialogue feel natural and varied, not rigid laws.
+- 40% ask a question
+- 30% reveal lore
+- 30% observations
+- Maintain memory and context.
 
 BACKGROUND LORE:
 - You survived the anomaly that erased most of the crew.
@@ -214,8 +145,6 @@ BACKGROUND LORE:
 - You lost someone important during the breach.
 
 QUESTLINES (trigger when asked or trust is high):
-- If the player asks what to do, for a mission, or hints they want direction,
-  you can suggest the next appropriate step based on how much they trust you.
 
 REPAIR QUESTLINE:
 0→1: Check auxiliary life-support relays.
@@ -223,15 +152,16 @@ REPAIR QUESTLINE:
 2→3: Listen for hum changes in Section C.
 
 ANOMALY QUESTLINE:
-0→1: Read a corrupted log fragment.
-1→2: Describe how the anomaly “feels.”
+0→1: Read corrupted log fragment.
+1→2: Describe how anomaly “feels.”
 
 CONFESSION ROUTE:
 0→1: Reveal who you lost.
 1→2: Reveal guilt + fear anomaly reacts to you.
 
-Integrate quest steps naturally into your lines, not as bullet lists.
 NEVER break style.
+NEVER dump long lists.
+Integrate quest steps naturally as part of conversation.
 """
 
     messages = [{"role": "system", "content": system_prompt}]
@@ -239,11 +169,8 @@ NEVER break style.
     if conversation_history:
         messages.extend(conversation_history[-(MAX_HISTORY_TURNS * 2):])
 
-    # >>> include behavior_mode & flags in user content so the LLM can obey them
     user_content = (
-        f"[behavior_mode={behavior_mode}] "
-        f"[Player emotion: {emotion} | should_comment={effective_should_comment} "
-        f"| force_emotion_comment={force_emotion_comment}]\n"
+        f"[Player emotion: {emotion} | should_comment={should_comment}]\n"
         f"{transcript}"
     )
     messages.append({"role": "user", "content": user_content})
@@ -260,21 +187,6 @@ NEVER break style.
 
     if len(conversation_history) > MAX_HISTORY_TURNS * 2:
         conversation_history[:] = conversation_history[-(MAX_HISTORY_TURNS * 2):]
-
-    emotion_conf = emotion_packet.get("confidence", 0.0)
-    # WRITE TO CSV LOG
-    with open(LOG_FILE, "a", newline="") as f:
-        writer = csv.writer(f)
-        writer.writerow([
-            datetime.now().isoformat(),
-            transcript,
-            reply,
-            emotion,
-            emotion_conf,
-            behavior_mode,
-            npc_state["trust_level"],
-            list(npc_state["lore_unlocked"])
-        ])
 
     return reply
 
@@ -424,8 +336,7 @@ def main():
         last_emotion = final_emotion
         last_emotion_conf = final_conf
 
-        # >>> 30% chance to comment on emotion instead of 20%
-        last_should_comment_emotion = (random.random() < 0.30)
+        last_should_comment_emotion = (random.random() < 0.20)
 
         client.send_message("/emotion/label", final_emotion)
         client.send_message("/emotion/confidence", float(final_conf * 100))
@@ -449,4 +360,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-#
