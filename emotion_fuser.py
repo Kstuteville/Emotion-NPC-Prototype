@@ -38,7 +38,7 @@ if not os.path.exists(LOG_FILE):
 llm_client = OpenAI(api_key=os.getenv("NPC_AI_KEY"))
 
 # CONFIGvvvvvv
-UE_IP = "192.168.1.159"
+UE_IP = ""
 UE_PORT = 9000
 client = udp_client.SimpleUDPClient(UE_IP, UE_PORT)
 
@@ -449,4 +449,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-#
