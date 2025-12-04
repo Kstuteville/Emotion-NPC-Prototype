@@ -2,122 +2,112 @@
 
 **A Real-Time Emotion-Aware NPC System for Unreal Engine**
 
-[![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-5.x-blue)](https://www.unrealengine.com/)
-[![Python](https://img.shields.io/badge/Python-3.8+-green)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+An interactive NPC system that responds to player facial expressions, speech content, and emotional context in real time — creating dialogue that feels alive, adaptive, and narratively meaningful.
+
+---
 
 ## Overview
 
-Emotional NPC is a real-time interactive character system that reacts to the player's facial expressions, spoken language, and soon, tone of voice. The system uses multimodal emotion sensing (FER + STT + LLM + TTS) to create NPC conversations that feel more natural, responsive, and narratively meaningful.
+Traditional NPCs rely on rigid dialogue trees that ignore how the player actually feels.  
+**Emotional NPC** changes this by giving characters the ability to read and respond to real emotional signals through multimodal AI sensing.
+
+Meet **Commander Zad** — a character who adapts their tone, reveals lore gradually, assigns quests, and builds trust based on your facial expressions, voice, and conversational history.
+
+This isn’t just cosmetic: emotion shapes the narrative, unlocks quests, and influences relationship progression.
 
 Designed as a modular framework, this project will evolve into a drop-in emotional AI toolkit for Unreal Engine.
 
+---
+
 ## Why This Project Matters
 
-Traditional NPCs rely on fixed dialogue trees that ignore the player's emotional state. This research explores whether emotionally responsive NPCs can:
+Traditional NPCs rely on fixed dialogue trees that ignore the player's emotional state.  
+This research explores whether emotionally responsive NPCs can:
 
-- **Improve immersion** in interactive experiences
-- **Increase narrative engagement** through adaptive storytelling
-- **Support more human-like interaction** that feels natural
-- **Encourage empathy-driven player decisions** based on emotional connection
+- **Improve immersion** in interactive experiences  
+- **Increase narrative engagement** through adaptive storytelling  
+- **Support more human-like interaction** that feels natural  
+- **Encourage empathy-driven player decisions** based on emotional connection  
 
 The system also advances research in affective computing and interactive narrative design.
 
+---
+
 ## Research Question
 
-> *How does real-time emotional awareness—through facial expression, vocal cues, and natural language—shape player perception of NPC empathy, presence, and narrative engagement?*
+> *How does real-time emotional awareness — through facial expression and natural language — affect player immersion, agency, and narrative engagement?*
+
+This prototype explores whether emotionally responsive NPCs can create deeper connections without breaking player control.
+
+---
 
 ## User Research & Early Feedback
 
-Across **30+ responses**, players consistently described emotion-responsive NPCs as more immersive and meaningful. However, realism only improves when emotional responses:
+Across **30+ playtests and surveys**:
 
-- Support player agency
-- Avoid overreaction
-- Do not break roleplay
+- **"Felt more immersive"** — dialogue reactions seemed natural and responsive  
+- **"More meaningful conversations"** — emotional alignment created stronger NPC attachment  
+- **"Like they actually listened"** — subtle emotion reads increased presence  
 
-These insights shaped the system's design: subtle emotional cues, short responses, and conversational memory.
+But realism only worked when:
 
-## System Features
+- Emotional responses stayed **subtle** (not overwhelming)  
+- Player agency remained **intact** (no hijacking conversation)  
+- Reactions matched **roleplay context** (not breaking immersion)  
 
-### 1. Real-Time Facial Emotion Recognition
-- DeepFace model detecting happy, sad, and neutral states
-- Confidence smoothing for stability
-- Live OSC streaming into Unreal Engine
+These insights shaped core design decisions: **emotion throttling**, **trust-gated lore**, and **agency-first dialogue**.
 
-### 2. Speech-to-Text (Player Input)
-- Whisper transcribes player speech
-- Combined with emotion snapshot
-- Sent to LLM for contextual response generation
+---
 
-### 3. LLM-Driven Dialogue
-- GPT-4o-mini generates Commander Zad's replies
-- Persona-based, emotionally adaptive responses
-- Lightweight conversation memory buffer
-- First sentence always reacts to player emotion
+## Core Features
 
-### 4. In-Engine TTS + Animation
-- Unreal Engine Text-to-Speech subsystem
-- NPC speaks every generated line
-- Modular talking montage system (rotating 4 clips)
+### **Multimodal Emotion Sensing**
+- Facial Expression Recognition — DeepFace detects happy, sad, neutral states  
+- Speech-to-Text — Whisper transcribes player dialogue  
+- Tone Analysis — *Coming soon* (Speech Emotion Recognition)  
+- Confidence Smoothing — Prevents jittery emotion detection  
 
-### 5. Unreal Engine OSC Integration
-- `/npc/reply` — NPC dialogue delivery
-- `/speech` — Player transcript
-- `/emotion/label`, `/emotion/confidence` — Facial emotion recognition
-- Drives UI, TTS, animation, and reaction logic
+### 🧠 Adaptive AI Personality
+- LLM-Driven Responses — GPT-4o-mini generates contextual dialogue  
+- Emotional Memory — remembers past interactions and player mood  
+- Dynamic Trust System — relationship evolves based on player behavior  
+- Mood States — Commander Zad has guilt, suspicion, sympathy, and trauma states  
 
-## Research Methods & Evaluation Strategy
+### 🎮 Unreal Engine Integration
+- OSC Communication — real-time Python ↔ Unreal data streaming  
+- Text-to-Speech — in-engine voice synthesis for NPC responses  
+- Talking Animations — lip-sync and gesture system  
+- UI Feedback — live emotion display and dialogue rendering  
 
-### A. Experimental Design
-- **Between-subjects study**
-  - Group A: Emotionally responsive NPC
-  - Group B: Static/scripted NPC
-- Compare empathy, immersion, and narrative engagement
+### 📖 Emergent Narrative Systems
+- Trust-Gated Lore — story reveals unlock through relationship progression  
+- Emotion-Driven Quests — three adaptive storylines (Repair, Anomaly, Confession)  
+- Contextual Objectives — NPC suggests tasks based on emotional state and conversation  
+- Behavioral Adaptation — teasing when you smile, cautious when you're sad  
 
-### B. Quantitative Instruments
-- **Game Experience Questionnaire (GEQ)**: immersion, flow, enjoyment
-- **ITC-Sense of Presence Inventory (ITC-SOPI)**: spatial + social presence
-- **Adapted Empathy Scale**: emotional connection with NPC
-- **Emotion Logs**: facial and vocal affect before and after interaction
-
-### C. Qualitative Evaluation
-- Post-play interviews
-- Anonymous follow-up survey
-- Annotated gameplay footage for emotional events
-- Open-ended questions on NPC realism and emotional response
-
-### D. Metrics Tracked
-- Response time to emotionally charged lines
-- Number of dialogue branches explored
-- Emotional shifts during interaction
-- Changes in affect over time
-- Memory and past emotions
-
-### Rationale
-- Grounded in affective computing and HCI literature
-- Multimodal sensing improves accuracy
-- Mixed-methods provide depth and generalizability
+---
 
 ## Impact on Player Experience and Games
 
 ### Benefits to Game Design
-- NPCs feel more alive and responsive
-- Supports narrative-driven decision-making
-- Encourages player empathy and connection
-- Makes dialogue adaptable to emotional context
+- NPCs feel more alive and responsive  
+- Supports narrative-driven decision-making  
+- Encourages player empathy and connection  
+- Makes dialogue adaptable to emotional context  
 
 ### Broader Applications
-- Education and training simulations
-- AI companions that respond to user frustration or confusion
-- Interactive storytelling systems
+- Education and training simulations  
+- AI companions that respond to frustration or confusion  
+- Interactive storytelling experiences  
+
+---
 
 ## Future Features
 
-- [ ] Emotional decay system (NPC gradually resets mood)
-- [ ] Emotion-linked quests
-- [ ] Cross-modal sarcasm or contradiction detection
-- [ ] Valence–Arousal continuous emotion mapping
-- [ ] Full SER (Speech Emotion Recognition) integration
+- [ ] Emotional decay system (NPC gradually resets mood)  
+- [ ] Cross-modal sarcasm or contradiction detection  
+- [ ] Custom character TTS voices
+- [ ] Full SER (Speech Emotion Recognition) integration  
 
 ---
 
