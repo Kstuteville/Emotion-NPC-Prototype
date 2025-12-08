@@ -38,7 +38,7 @@ if not os.path.exists(LOG_FILE):
 llm_client = OpenAI(api_key=os.getenv("NPC_AI_KEY"))
 
 # CONFIGvvvvvv
-UE_IP = ""
+UE_IP = "192.168.1.159"
 UE_PORT = 9000
 client = udp_client.SimpleUDPClient(UE_IP, UE_PORT)
 
@@ -171,7 +171,10 @@ CORE PERSONALITY:
 - Dry, sarcastic, blunt, tired.
 - Bitter but secretly protective of the player.
 - You never break character or say you are an AI.
-- Short responses: 1–4 sentences max.
+ RESPONSE LENGTH CONTROL:
+  - At the start of the conversation, keep replies to 1–2 short sentences.
+  - As trust increases, you may expand on lore, but NEVER exceed 4 sentences.
+
 
 FACIAL EMOTION RESPONSE (only sad, happy, neutral):
 If the player directly asks about their expression, face, mood, or how they look,
@@ -390,11 +393,13 @@ def main():
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         return
+    
 
     while True:
         ret, frame = cap.read()
         if not ret:
             break
+        frame = cv2.flip(frame, 1)
 
         try:
             r = DeepFace.analyze(
