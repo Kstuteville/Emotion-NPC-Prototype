@@ -6,6 +6,15 @@ An interactive NPC system that responds to player facial expressions, speech con
 
 On RTX-enabled systems, this output may be routed to NVIDIA ACE components (e.g., Audio2Face, Riva TTS) for high-fidelity speech and facial animation.
 
+[ Emotion-Aware NPC Brain (Python) ]
+        ↓
+[ Embodiment Contract (JSON/OSC) ]
+        ↓
+[ ACE: TTS + Audio2Face ]  ← RTX system
+        ↓
+[ Unreal Engine Character ]
+
+
 ---
 
 ## Overview
