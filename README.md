@@ -4,6 +4,8 @@
 
 An interactive NPC system that responds to player facial expressions, speech content, and emotional context in real time — creating dialogue that feels alive, adaptive, and narratively meaningful.
 
+On RTX-enabled systems, this output may be routed to NVIDIA ACE components (e.g., Audio2Face, Riva TTS) for high-fidelity speech and facial animation.
+
 ---
 
 ## Overview
