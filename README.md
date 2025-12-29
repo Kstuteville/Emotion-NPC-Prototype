@@ -17,6 +17,10 @@ On RTX-enabled systems, this output may be routed to NVIDIA ACE components (e.g.
 
 ---
 
+[![Emotional NPC Demo Vid](https://img.youtube.com/vi/_wfsONtLWQU/maxresdefault.jpg)](https://www.youtube.com/watch?v=_wfsONtLWQU)
+
+
+
 ## Overview
 
 Traditional NPCs rely on rigid dialogue trees that ignore how the player actually feels.  
