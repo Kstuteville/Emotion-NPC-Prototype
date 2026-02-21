@@ -3,7 +3,7 @@ from pynput import keyboard
 
 LOG_FILE = "npc_playtest_log.csv"
 
-UE_IP = "" #put your local IP here
+UE_IP = "" 
 UE_PORT = 9000
 
 SAMPLE_RATE = 16000
